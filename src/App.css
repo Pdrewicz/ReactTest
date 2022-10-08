@@ -1,38 +1,57 @@
 .App {
   text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#light {
+  background-color: white;
+  color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#dark {
+  background-color: rgb(26, 23, 40);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#themeToggle {
+  margin-top: 50px;
+  background-color: rgb(215, 182, 216);
+  color: black;
+  border: none;
+  border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#dark #themeToggle {
+  background-color: rgb(83, 49, 85);
+  color: white;
+}
+
+#counter {
+  background-color: rgb(215, 182, 216);
+  width: 400px;
+  height: 150px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 25px;
+  color: black;
+}
+
+#dark #counter {
+  background-color: rgb(83, 49, 85);
+  color: white;
+}
+
+#counter button {
+  border: none;
+  width: 25px;
+  height: 25px;
+  margin: 4px;
+  background-color: white;
+  color: black;
+}
+
+#dark #counter button {
+  color: white;
+  background-color: rgb(26, 23, 40);
 }
